@@ -119,14 +119,14 @@ namespace Project {
 				 try {
 IO::FileInfo ^dosyaBoyut = nullptr;
 dosyaBoyut = gcnew System::IO::FileInfo(textBox1->Text);
-MessageBox::Show("Dosya Boyut: " + dosyaBoyut->Length + " byte(s) \n" 
-				 "Dosya Boyut2: " + dosyaBoyut->Length/1024 + " kbyte(s) \n"
-				 "Dosya Boyut3: " + dosyaBoyut->Length/1024/1024 + " mbyte(s) \n"
+MessageBox::Show("File Size: " + dosyaBoyut->Length + " byte(s) \n" 
+				 "File Size-2: " + dosyaBoyut->Length/1024 + " kbyte(s) \n"
+				 "File Size-3: " + dosyaBoyut->Length/1024/1024 + " mbyte(s) \n"
 				 );}catch(...)
 {
 
-MessageBox::Show("Hatalı dosya dizini , lütfen kontrol ediniz... \n"
-				 "Dosya dizininiz " + textBox1->Text + ""
+MessageBox::Show("None of the files directory, please check... \n"
+				 "You are file directory " + textBox1->Text + ""
 				 
 				 );
 }
