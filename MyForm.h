@@ -151,11 +151,10 @@ MessageBox::Show("Hatalı dosya dizini , lütfen kontrol ediniz... \n"
 	    sw->WriteLine(s+ a);
 	
         sw->Close();
-        MessageBox::Show("Dosyaya 1 Byte'lık değer eklendi...");
-
+        MessageBox::Show("1 byte value added to the file...");
 			}catch (...){
 			
-			MessageBox::Show("Olaması gereken bir hata oluştu, programı yeniden başlatınız...");
+			MessageBox::Show("An error has occurred upgrade be required, please restart the program...");
 			
 			}
 			 }
